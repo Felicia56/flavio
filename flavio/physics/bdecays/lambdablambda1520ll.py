@@ -89,7 +89,7 @@ def angular_coefficients(ta, br):
     # br is br(l(1520)->kp)
 
     L={}
-    L['1c'] = -2*br*( (ta['Aperp1','L'] * ta['Apara1','L'].conj()).real
+    L['1c'] = -2*br*( ( ta['Aperp1','L'] * ta['Apara1','L'].conj() ).real
                       - (ta['Aperp1','R'] * ta['Apara1','R'].conj()).real
     )
     L['1cc'] = br*( abs(ta['Apara1','L'])**2 + abs(ta['Aperp1','L'])**2
